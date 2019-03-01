@@ -7,9 +7,4 @@
   gtag('config', '{{ site.ga_analytics }}');
 </script>
 {% endif %}
-
-{% asset vendor.js %}
-
-{% if site.theme_toggle == true %}
-{% asset themetoggle.js %}
-{% endif %}
+<script src="{{ "/assets/javascripts/vendor.js" | prepend: site.baseurl }}"></script>
